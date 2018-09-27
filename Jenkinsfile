@@ -8,9 +8,9 @@ pipeline {
             git(url: 'git@github.com:SalesRabbit/SalesRabbit-Android.git', branch: 'master', credentialsId: 'salesrabbit_jenkins')
           }
         }
-        stage('') {
+        stage('error') {
           steps {
-            sh 'git submodule update --init --recursive'
+            sh 'cd Universal-Sales && git submodule update --init --recursive'
           }
         }
       }
