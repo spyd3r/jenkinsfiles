@@ -37,7 +37,4 @@ pipeline {
       }
     }
   }
-  environment {
-    ANDROID_HOME = '/var/lib/jenkins/android-sdk-linux'
-  }
 }
